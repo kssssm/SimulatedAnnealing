@@ -6,13 +6,14 @@
 
 ## SimulatedAnnealing 
 
+![simulatedAnnealing](https://user-images.githubusercontent.com/81538527/121649050-1e49df00-cad3-11eb-9f40-4990158ccbdb.png)
+
 - 고온 물질의 분자가 식어가면서 (annealing) 점차 안정화되어 가는 과정을 묘사(simulation)한 알고리즘
 
 - 온도가 높을수록 분자의 이동이 자유롭고, 온도가 낮을수록 점차 안정화되어 수렴된다.
 
 - 탐색 공간에서 주어진 함수의 전역 최적점(global optimum)의 좋은 근사해를 찾는 확률적 휴리스틱 접근 방식
 
-![simulatedAnnealing](https://user-images.githubusercontent.com/81538527/121649050-1e49df00-cad3-11eb-9f40-4990158ccbdb.png)
 
 
 
@@ -35,11 +36,11 @@
 
 #### 적용
 
-- f(x) = 2x^3 + 3x^2 + 70 의 전역 최적점 
+- f(x) = - 2x^3 + 3x^2 + 70 의 전역 최적점 
 
 - 코드
 ```java
-import java.util.ArrayList;
+ import java.util.ArrayList;
 import java.util.Random;
 
 public class SimulatedAnnealing {
@@ -62,7 +63,7 @@ public class SimulatedAnnealing {
         hist.add(f0);
 
 
-        for (double t = 200; t > 1; t *=  a) {    //초기온도 t=200 , 루프가 끝날때마다 t를 냉각율(a)을 곱하여 새로운 t를 정의
+        for (double t = 200; t > 1; t *= a) {    //초기온도 t=200 , 루프가 끝날때마다 t를 냉각율(a)을 곱하여 새로운 t를 정의
             int kt = (int) t;
             for (int j = 0; j < kt; j++) {
                 double upper = x0 + 1;
@@ -93,7 +94,7 @@ public class SimulatedAnnealing {
         Problem p = new Problem() {
             @Override
             public double fit(double x) {
-                return  -2*x*x*x+ 32*x*x + 70;      //-2x^3+32x^2=70
+                return -2 * x * x * x + 32 * x * x + 70;      //-2x^3+32x^2=70
             }
 
             @Override
@@ -114,6 +115,7 @@ public class SimulatedAnnealing {
         boolean isNeighborBetter(double f0, double f1);
     }
 }
+            
 ```
 
 
