@@ -122,7 +122,7 @@ public class SimulatedAnnealing {
 - 결과
 
 ![결과](https://user-images.githubusercontent.com/81538527/121649288-6832c500-cad3-11eb-901e-6818ae06fb41.png)
-
+x=11 -> f(x)=1282
 
 
 # curve fitting
@@ -131,14 +131,14 @@ public class SimulatedAnnealing {
 ## 모델
 
 
-한 달 동안 일(독립변수) 마다 핸드폰 어플에 기록된 누적 걸음 수(종속변수)
+한 달 동안 날짜(독립변수) 마다 핸드폰 어플에 기록된 누적 걸음 수(종속변수)
 ![모델](https://user-images.githubusercontent.com/81538527/121650008-1474ab80-cad4-11eb-8f2a-6c0bf3f56a74.jpg)
 
 
 
 
 
-![추정](https://user-images.githubusercontent.com/81538527/121650135-3b32e200-cad4-11eb-968d-464239980045.png")
+![추정](https://user-images.githubusercontent.com/81538527/121650431-877e2200-cad4-11eb-8ecd-8feb9ae88556.png)
 
 y=34x-21로 추정 할 수 있다.
 
