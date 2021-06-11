@@ -124,13 +124,13 @@ public class SimulatedAnnealing {
 - 결과
 
 ![결과](https://user-images.githubusercontent.com/81538527/121649288-6832c500-cad3-11eb-901e-6818ae06fb41.png)
-x=11 -> f(x)=1282
+x=11 -> f(x)=1283
 
 
-# curve fitting
+## curve fitting
 
 
-## 모델
+### 모델
 
 
 한 달 동안 날짜(독립변수) 마다 핸드폰 어플에 기록된 누적 걸음 수(종속변수)
